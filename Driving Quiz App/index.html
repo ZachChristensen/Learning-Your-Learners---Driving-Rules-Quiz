@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="main-menu">
+  	<h1 class="centre">Learning Your Learners</h1>
+  	<h2 class="centre">Test yourself against the law!</h2>
+  	<button id="butt1" class="titleButton">Start Quiz</button>
+  	<button id="butt2" class="titleButton">Statistics</button>
+  	<button id="butt3" class="titleButton">Options</button>
+  	<button id="butt4" class="titleButton">Quit</button>
+  </div>
+
+  <div id="quiz" style="display:none;">
+  	<h1 class="centre">Quiz</h1>
+    <h2 id="Question">Question Number <span id="questNo"></span>:</h2>
+    <form>
+    <ul><P ID='question'>What is the english meaning of the following spoken maori word?</P>
+    
+    
+      <ul>
+        <li><input type="radio" name="choices" value="A" id="rad1" checked="checked"><label for="choiA">A: </label><span id="choiATxt"> </span> </li>
+        <li><input type="radio" name="choices" value="B" id="rad2"><label for="choiB">B: </label><span id="choiBTxt"> </span> </li>
+        <li><input type="radio" name="choices" value="C" id="rad3"><label for="choiC">C: </label><span id="choiCTxt"> </span> </li>
+        <li><input type="radio" name="choices" value="D" id="rad4"><label for="choiD">D: </label><span id="choiDTxt"> </span> </li>
+      </ul>
+    </ul>
+    </form>
+    <h2 id=timer class='centre'></h2>
+    <button id="buttNextQuest" class="titleButton">Next Question</button>
+    <button id="buttReturnToMainQuiz" class="titleButton">Quit To Main Menu</button>
+  </div>
+  
+  <div id="quizEnd" style="display:none;">
+  	<h1 class="centre">End of quiz</h1>
+  	<p id="results" class="centre"></p>
+    <button id="buttReturnToMainQuizEnd" class="titleButton">Return To Main Menu</button>
+  </div>
+  
+  <div id="stats" style="display:none;">
+  	<h1 class="centre">Stats</h1>
+    <p>Welcome to the statistics</p>
+    <p id="statsPara"></p>
+    <button id="buttReturnToMainStats" class="titleButton">Return To Main Menu</button>
+  </div>
+
+  <div id="options" style="display:none;">
+  	<h1 class="centre">Options</h1>
+    <div id="changeDiv">
+    <p>Change no of questions</p>
+    <input id='inputNewNum'></input>
+    <button id="buttChangeNum">Change</button>
+    </div>
+    <button id="buttReturnToMainOptions" class="titleButton">Return To Main Menu</button>
+  </div>
+
+	<script src="Model.js"></script>
+	<script src="View.js"></script>
+	<script src="Controller.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

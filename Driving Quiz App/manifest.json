@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Portfolio",
+  "short_name": "Learning Your Learners",
+  "description": "Driving quiz to help you pass your New Zealand written driving quiz.",
+  "version": "1.0",
+  "minimum_chrome_version": "38",
+  "permissions": ["storage"],
+
+  "icons": {
+    "16": "assets/icon 16.png",
+    "128": "assets/icon.png"
+  },
+
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  }
+}
